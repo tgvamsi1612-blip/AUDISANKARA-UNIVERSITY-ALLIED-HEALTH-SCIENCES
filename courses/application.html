@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form | Audisankara Deemed to be University</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <div>
+        <!-- Top Info Bar -->
+        <div class="bg-blue-950 text-white text-xs sm:text-sm py-2 px-4 border-b border-blue-900">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <div class="flex items-center space-x-6">
+                    <span><i class="fa fa-phone text-yellow-400 mr-1"></i> 6309914446 / 7 / 8</span>
+                    <span><i class="fa fa-globe text-yellow-400 mr-1"></i> www.audisankarauniversity.edu.in</span>
+                </div>
+                <div class="flex items-center space-x-3 font-semibold">
+                    <span class="bg-yellow-500 text-blue-950 px-2 py-0.5 rounded text-xs font-bold">Admissions Open 2026-2027</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Header -->
+        <header class="bg-white shadow-md sticky top-0 z-40">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="bg-blue-950 text-yellow-400 p-2.5 rounded-lg font-black text-xl tracking-wider border border-yellow-500">
+                        ASDU
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-extrabold text-blue-950 leading-tight">AUDISANKARA</h1>
+                        <p class="text-xs font-bold text-gray-600 tracking-wide uppercase">Deemed To Be University</p>
+                    </div>
+                </a>
+                <a href="index.html" class="text-blue-950 hover:text-blue-800 font-bold text-sm flex items-center gap-1">
+                    <i class="fa fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </header>
+
+        <!-- Page Banner -->
+        <section class="bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-900 text-white py-10 px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="bg-yellow-500 text-blue-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+                    Admissions 2026-2027
+                </span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold mt-3">Student Application Portal</h1>
+                <p class="text-gray-300 text-sm mt-2">Fill out the details below to complete your course registration.</p>
+            </div>
+        </section>
+
+        <!-- Application Form Container -->
+        <main class="max-w-3xl mx-auto py-10 px-4">
+            <div class="bg-white p-6 sm:p-10 rounded-2xl border shadow-lg">
+                
+                <!-- Replace 'https://formspree.io/f/YOUR_FORM_ID' with your Web3Forms, Formspree, or backend submission URL -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                    
+                    <div class="border-b pb-3 mb-4">
+                        <h2 class="text-xl font-bold text-blue-950">Personal Details</h2>
+                        <p class="text-xs text-gray-500">Provide accurate contact information for admission processing.</p>
+                    </div>
+
+                    <!-- Full Name -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Full Name *</label>
+                        <input type="text" name="full_name" required placeholder="Enter student full name" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required placeholder="Enter 10-digit mobile number" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                        </div>
+
+                        <!-- Email Address -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Email Address *</label>
+                            <input type="email" name="email" required placeholder="Enter email address" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-3 mb-4 pt-4">
+                        <h2 class="text-xl font-bold text-blue-950">Academic Selection</h2>
+                        <p class="text-xs text-gray-500">Select the course you wish to apply for.</p>
+                    </div>
+
+                    <!-- Program Selection -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Select Course *</label>
+                        <select name="selected_course" required class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950 bg-white">
+                            <option value="" disabled selected>-- Select a Program --</option>
+                            <option value="BPT">Bachelor of Physiotherapy (BPT)</option>
+                            <option value="B.AOTT">Anaesthesia & OT Technology (B.AOTT)</option>
+                            <option value="B.MLS">Medical Laboratory Science (B.MLS)</option>
+                            <option value="BMRIT">Radiology & Imaging Tech (BMRIT)</option>
+                            <option value="MPT">Master of Physiotherapy (MPT)</option>
+                        </select>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <!-- Qualification -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Highest Qualification *</label>
+                            <input type="text" name="qualification" required placeholder="e.g. Intermediate (BiPC)" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                        </div>
+
+                        <!-- Marks Percentage -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Percentage / Aggregate Marks *</label>
+                            <input type="text" name="marks_percentage" required placeholder="e.g. 75%" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                        </div>
+                    </div>
+
+                    <!-- City / Address -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-2">City / Location</label>
+                        <input type="text" name="city" placeholder="Enter city name" class="w-full p-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-950">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-blue-950 font-extrabold py-4 rounded-xl shadow-md transition transform hover:-translate-y-0.5 text-base">
+                        Submit Application
+                    </button>
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8 px-4 border-t border-blue-900 mt-12">
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-gray-300">
+            <div>
+                <p class="font-bold text-sm text-yellow-400 mb-1">Audisankara (Deemed to be University)</p>
+                <p><i class="fa fa-location-dot mr-1"></i> NH-16, By Pass Road, Gudur, Sri Potti Sriramulu (SPSR) Nellore District, A.P. - 524102</p>
+            </div>
+            <div>
+                <p>&copy; 2026 Audisankara Deemed to be University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
